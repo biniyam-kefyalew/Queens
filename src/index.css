@@ -1,68 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --color-primary: #004225;
+  --color-secondary: #9ee37d;
+  --color-accent: #a3b18a;
+  --color-highlight: #dad7cd;
+  --color-background: #f5f5f0;
+  --color-success: #cfffcf;
+  --color-muted-text: #736372;
+  --color-light-green: #83e8ba;
+  --color-heading: #77b6ea;
+  --color-footer-bg: #004225;
+  --color-surface: #ffffff;
+  --color-text: #2d2d2d;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-heading);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  a:hover {
-    color: #747bff;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  @apply bg-[#004225] text-white px-8 py-3 rounded-full font-medium hover:bg-[#002d1a] transition-all duration-300 hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply bg-[#9ee37d] text-[#004225] px-8 py-3 rounded-full font-medium hover:bg-[#8dd96a] transition-all duration-300 hover:shadow-lg;
+}
+
+.btn-outline {
+  @apply border-2 border-[#004225] text-[#004225] px-8 py-3 rounded-full font-medium hover:bg-[#004225] hover:text-white transition-all duration-300;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-heading {
+  color: var(--color-heading);
+}
+
+.text-muted {
+  color: var(--color-muted-text);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-highlight {
+  background-color: var(--color-highlight);
+}
+
+.bg-success {
+  background-color: var(--color-success);
+}
+
+.leaflet-popup-content {
+  margin: 0% !important;
+  overflow: hidden;
+}
+
+.leaflet-popup-content p {
+  margin: unset;
 }
