@@ -142,7 +142,7 @@ const BranchDetailPage: React.FC = () => {
         </Link>
         {/* Interactive Map */}
         <div className="mb-12">
-          <h2 className="text-2xl font-serif font-bold text-heading mb-6">
+          <h2 className="text-2xl font-serif font-bold text-primary mb-6">
             Store Location
           </h2>
           <div className="rounded-2xl relative text-center">
@@ -184,11 +184,11 @@ const BranchDetailPage: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex space-x-4 mt-6 lg:mt-0">
-                  <button className="btn-primary flex items-center">
+                  <button className="text-white px-8 py-3 rounded-full font-medium hover:bg-[#002d1a] transition-all duration-300 hover:shadow-lg bg-primary flex items-center">
                     <Navigation className="h-5 w-5 mr-2" />
                     Get Directions
                   </button>
-                  <button className="btn-outline flex items-center">
+                  <button className="text-primary px-8 py-3 rounded-full font-medium border border-primary flex items-center">
                     <Phone className="h-5 w-5 mr-2" />
                     Call Store
                   </button>
@@ -224,7 +224,7 @@ const BranchDetailPage: React.FC = () => {
           <div className="lg:col-span-2 space-y-12">
             {/* Store Information */}
             <div>
-              <h2 className="text-2xl font-serif font-bold text-heading mb-6">
+              <h2 className="text-2xl font-serif font-bold text-primary mb-6">
                 Store Information
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -269,7 +269,7 @@ const BranchDetailPage: React.FC = () => {
 
             {/* Services */}
             <div>
-              <h2 className="text-2xl font-serif font-bold text-heading mb-6">
+              <h2 className="text-2xl font-serif font-bold text-primary mb-6">
                 Our Services
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -293,7 +293,7 @@ const BranchDetailPage: React.FC = () => {
 
             {/* Special Offers */}
             <div>
-              <h2 className="text-2xl font-serif font-bold text-heading mb-6">
+              <h2 className="text-2xl font-serif font-bold text-primary mb-6">
                 Special Offers
               </h2>
               <div className="space-y-4">
@@ -321,7 +321,7 @@ const BranchDetailPage: React.FC = () => {
 
             {/* Customer Reviews */}
             <div>
-              <h2 className="text-2xl font-serif font-bold text-heading mb-6">
+              <h2 className="text-2xl font-serif font-bold text-primary mb-6">
                 Customer Reviews
               </h2>
               <div className="space-y-6">
@@ -403,13 +403,13 @@ const BranchDetailPage: React.FC = () => {
                 Quick Actions
               </h3>
               <div className="space-y-3">
-                <button className="w-full btn-primary text-sm">
+                <button className="w-full border border-primary  rounded-full flex  px-8 py-4 text-sm">
                   <Navigation className="h-4 w-4 mr-2" />
-                  Get Directions
+                  <span className="mx-auto">Get Directions</span>
                 </button>
-                <button className="w-full btn-outline text-sm">
+                <button className="w-full border border-primary  rounded-full flex  px-8 py-4 text-sm">
                   <Phone className="h-4 w-4 mr-2" />
-                  Call Store
+                  <span className="mx-auto">Call Store</span>
                 </button>
               </div>
             </div>

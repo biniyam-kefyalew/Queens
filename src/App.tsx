@@ -1,20 +1,21 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import HomePage from './pages/HomePage';
-import ProductsPage from './pages/ProductsPage';
-import ProductDetailPage from './pages/ProductDetailPage';
-import BranchesPage from './pages/BranchesPage';
-import BranchDetailPage from './pages/BranchDetailPage';
-import PaymentsPage from './pages/PaymentsPage';
-import AboutPage from './pages/AboutPage';
-import HowToBuyPage from './pages/HowToBuyPage';
-import ContactPage from './pages/ContactPage';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import HomePage from "./pages/HomePage";
+import ProductsPage from "./pages/ProductsPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
+import BranchesPage from "./pages/BranchesPage";
+import BranchDetailPage from "./pages/BranchDetailPage";
+import PaymentsPage from "./pages/PaymentsPage";
+import AboutPage from "./pages/AboutPage";
+import HowToBuyPage from "./pages/HowToBuyPage";
+import ContactPage from "./pages/ContactPage";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
     <Router>
       <Layout>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/products" element={<ProductsPage />} />

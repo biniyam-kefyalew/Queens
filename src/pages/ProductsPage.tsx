@@ -132,7 +132,7 @@ const ProductsPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-heading mb-4">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">
             Our Products
           </h1>
           <p className="text-xl text-muted-text">
@@ -235,7 +235,7 @@ const ProductsPage: React.FC = () => {
               </div>
 
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-heading mb-2">
+                <h3 className="text-lg font-semibold text-primary mb-2">
                   {product.name}
                 </h3>
                 <p className="text-muted-text text-sm mb-3">

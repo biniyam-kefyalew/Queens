@@ -41,7 +41,7 @@ const BranchesPage: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="pt-16">
+      <div>
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
@@ -70,9 +70,9 @@ const BranchesPage: React.FC = () => {
     );
   }
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen py-16 bg-background">
       {/* Hero Section */}
-      <div className="pt-16">
+      <div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl text-primary md:text-5xl font-serif font-bold mb-4">
             Our Branches
@@ -165,7 +165,7 @@ const BranchesPage: React.FC = () => {
               <div className="p-6 ">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold text-heading mb-1">
+                    <h3 className="text-xl font-bold text-primary mb-1">
                       {branch.name}
                     </h3>
                     <div className="flex items-center text-muted-text">

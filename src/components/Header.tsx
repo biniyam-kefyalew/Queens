@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <Crown className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-serif font-bold text-heading">
+            <span className="text-2xl font-serif font-bold text-primary">
               Queen's Supermarket
             </span>
           </Link>
@@ -67,7 +67,10 @@ const Header: React.FC = () => {
                 )}
               </button>
             </div>
-            <Link to="/contact" className="btn-primary text-sm px-6 py-2">
+            <Link
+              to="/contact"
+              className="bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-[#002d1a] transition-all duration-300 hover:shadow-lg text-sm px-6 py-2"
+            >
               {t("contact")}
             </Link>
           </div>
